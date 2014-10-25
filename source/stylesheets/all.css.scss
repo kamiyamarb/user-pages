@@ -1,20 +1,32 @@
 @charset "utf-8";
 
+@import 'bootstrap';
+
 body {
   background: #d4d4d4 url("../images/background.png");
   text-align: center;
   font-family: sans-serif; }
 
-h1 {
+@mixin title-text {
   color: rgba(0, 0, 0, .3);
   font-weight: bold;
   font-size: 32px;
   letter-spacing: -1px;
   text-transform: uppercase;
   text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
-  background: url("../images/middleman.png") no-repeat center 100px;
-  padding: 350px 0 10px;
-  margin: 0; }
+}
+
+h1 {
+  @include title-text;
+
+  background: url("https://avatars1.githubusercontent.com/u/9387803?v=2&s=400") no-repeat center 100px;
+  padding: 450px 0 10px;
+  margin: 0;
+}
+
+h2 {
+  @include title-text;
+}
 
 .doc {
   font-size: 14px;
