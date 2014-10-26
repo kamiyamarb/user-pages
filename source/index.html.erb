@@ -4,51 +4,101 @@ title: Welcome to Middleman
 
 <div class="welcome">
   <h1>
-    Kamiyama.rb #1 2014/11/08
+    Kamiyama.rb #1 秋の大収穫祭
   </h1>
-  <h2>
-    in KAMIYAMA VALLEY SATELLITE OFFICE COMPLEX
-  </h2>
-  <p class="doc">
-    <%= link_to "Join us !", "http://kamiyamarb.doorkeeper.jp/events/16452" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+</div>
+
+<div class='contents introduction'>
+  <p class='title bg_red'>神山.rb</p>
+  <p class='description'>
+    徳島県の山の中、すだちの里でもある神山町で行う地域 Ruby コミュニティです。<br/>
+    たいして Ruby の得意ではない発起人が主催しておりますので、紅葉も見頃の神山を観光ついでに、というか観光メインでお越しいただければと思います！
+  </p>
+  <%= link_to '神山イベント情報2014秋・冬', 'http://www.town.kamiyama.lg.jp/kiji/20141016-13565', class: 'btn btn-warning', target: '_blank' %>
+  <%= link_to '神山温泉 & 道の駅', 'http://kamiyama-spa.com/', class: 'btn btn-success', target: '_blank' %>
+  <%= link_to '神山森林公園イルローザの森', 'http://central-forest.jp/park/', class: 'btn btn-danger', target: '_blank' %>
+  <p class='description'>
+    今回は神山の深刻な Ruby 離れを鑑み、県外から Agile や Ruby 界隈の（観光目当ての）スピーカーを多数お招きしてお送りしますので、内容も期待してご参加いただければと思います。
+  </p>
+  <p class='description'>
+    日時 <br/>2014/11/08 13:30
+  </p>
+  <p class='description'>
+    場所 <br/>
+    KAMIYAMA VALLEY SATELLITE OFFICE COMPLEX
+  </p>
+</div>
 <div class='contents'>
-  <h2>セッション #1 XP祭り 2014 の再演「人生で大事なことはXP白本の参考文献に教わった 〜本と本の間の見えない糸を辿り、XPをより深く知る〜」</h2>
+  <p class='title bg_red'>Session #1</p>
+  <h3>XP祭り 2014 の再演<br/>「人生で大事なことはXP白本の参考文献に教わった<br/> 〜本と本の間の見えない糸を辿り、XPをより深く知る〜」</h3>
   <h4>スピーカー：懸田 剛さん (<%= link_to '@kkd', 'https://twitter.com/kkd' %>)</h4>
-  <%= image_tag 'kkd.jpg' %>
+
+  <div class='profile bg_red' style='height: 470px; width: 900px;' >
+    <%= image_tag 'photo_kkd.jpg' %>
+    <ul class='list-unstyled'>
+      <li>愛媛在住</li>
+      <li>合同会社カルチャーワークス代表</li>
+      <li>Agile459</li>
+      <li>アジャイルプロセス協議会四国支部長</li>
+      <li><%= link_to '愛媛でいきてまG', 'http://giantech.jp/', target: '_blank' %></li>
+      <li><%= link_to '「次世代につながる、いきいきとした世界を作る」', 'http://president.matrix.jp/post-cultureworks/', target: '_blank' %></li>
+      <li><%= link_to 'slideshare', 'http://www.slideshare.net/kkd/', target: '_blank' %></li>
+    </ul>
+  </div>
+  <p class='speaker-description'>
+    XP祭りでその XP厨ぶりをいかんなく発揮した内容を、<br/>そのテンションそのままに神山の地で再演いただきます。
+  </p>
 </div>
 
 <div class='contents'>
-  <h2>セッション #2 「プロジェクトで重要なことはだいたいSHIR○BAK○で学んだ(仮)」</h2>
+  <p class='title bg_yellow'>Session #2</p>
+  <h3 class='c_yellow'>「プロジェクトで重要なことはだいたいSHIR○BAK○で学んだ(仮)」</h3>
   <h4>スピーカー：鍛冶舎 浩さん (<%= link_to 'kajisha', 'https://github.com/kajisha' %>)</h4>
-  <%= image_tag 'kajisha.jpg' %>
+  <div class='profile bg_yellow' style='height: 470px; width: 700px;' >
+    <%= image_tag 'kajisha.jpg', style: 'height: 470px;'  %>
+    <ul class='list-unstyled'>
+      <li>永和システムマネジメント</li>
+    </ul>
+  </div>
 </div>
 
 <div class='contents'>
-  <h2>セッション #3 coming soon..</h2>
+  <p class='title bg_navy'>Session #2</p>
+  <h3 class='c_navy'>Coming soon..</h3>
   <h4>スピーカー：千葉 啓介さん (<%= link_to '@chibamem', 'https://twitter.com/chibamem' %>)</h4>
-  <%= image_tag 'chibamem.jpg' %>
+  <div class='profile bg_navy' style='height: 470px; width: 950px;' >
+    <%= image_tag 'chibamem.jpg', style: 'height: 470px;'  %>
+    <ul class='list-unstyled'>
+      <li>永和システムマネジメント</li>
+    </ul>
+  </div>
 </div>
 
 <div class='contents'>
-  <h2>セッション #4 coming soon..</h2>
+  <p class='title bg_blue'>Session #4</p>
+  <h3 class='c_blue'>Coming soon..</h3>
   <h4>スピーカー：田垣 亜季さん (<%= link_to '@akiinyo', 'https://twitter.com/akiinyo' %>)</h4>
-  <%= image_tag 'akiinyo.jpg' %>
+  <div class='profile bg_navy' style='height: 470px; width: 950px;' >
+    <%= image_tag 'akiinyo.jpg', style: 'height: 470px;' %>
+    <ul class='list-unstyled'>
+      <li>永和システムマネジメント</li>
+    </ul>
+  </div>
 </div>
 
 <div class='contents'>
-  <h2>セッション #5 coming soon..</h2>
+  <p class='title bg_red'>Session #5</p>
+  <h3 class='c_red'>Coming soon..</h3>
   <h4>スピーカー：未定</h4>
 </div>
 
 <div class='contents'>
-  <h2>ライトニングトーク</h2>
+  <p class='title bg_yellow'>ライトニングトーク</p>
   <h4>飛び込み歓迎！問い合わせは <%= link_to '@dany1468', 'https://twitter.com/dany1468' %> まで</h4>
 </div>
 
-<div class='contents'>
-  <h2>参加申し込み</h2>
+<div class='contents entry'>
+  <p class='title bg_navy'>参加申し込み</p>
   <p>
     <%= link_to 'Doorkeeper 神山.rb 第一回', 'http://kamiyamarb.doorkeeper.jp/events/16452', class: 'btn btn-lg btn-outline', role: 'button' %>
   </p>

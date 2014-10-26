@@ -8,23 +8,22 @@ body {
   font-family: sans-serif; }
 
 @mixin title-text {
-  color: rgba(0, 0, 0, .3);
+  color: #7c0303;
   font-weight: bold;
   font-size: 32px;
   letter-spacing: -1px;
-  text-transform: uppercase;
   text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
 }
 
 h1 {
   @include title-text;
-
-  background: url("https://avatars1.githubusercontent.com/u/9387803?v=2&s=400") no-repeat center 100px;
-  padding: 450px 0 10px;
+  font-size: 48px;
+  background: url("https://avatars1.githubusercontent.com/u/9387803?v=2&s=300") no-repeat center 100px;
+  padding: 450px 0 50px;
   margin: 0;
 }
 
-h2 {
+h2, h3 {
   @include title-text;
 }
 
@@ -45,7 +44,10 @@ h2 {
 
 .welcome {
   -webkit-animation-name: welcome;
-  -webkit-animation-duration: .9s; }
+  -webkit-animation-duration: .9s;
+  background: url("../images/photo_01.jpg") no-repeat center;
+  background-size:cover;
+}
 
 @-webkit-keyframes welcome {
   from {
@@ -67,25 +69,120 @@ h2 {
 }
 
 .contents {
-  padding-top: 100px;
   padding-bottom: 100px;
-
   font-size: 16px;
-  line-height: 1.5;
   color: #555;
   text-align: center;
   background-color: #fff;
-  border-bottom: 1px solid #e5e5e5;
+
+  h2 {
+    margin:0 auto;
+  }
+
+  h3 {
+    font-size:36px;
+    line-height:1.4em;
+    margin:0 auto 30px;
+  }
+
+  h4 {
+    font-size:36px;
+    line-height:1.4em;
+    margin-bottom:20px;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
 }
 
+.title {
+  font-size:36px;
+  font-weight:bold;
+  padding:20px 0;
+  margin-bottom:30px;
+  text-align:center;
+  color:#fff; }
+
+
+.description {
+  color: #eee;
+  text-shadow: 0 1px 0 rgba(30, 30, 30, .5);
+  font-size: 20px;
+  line-height: 1.4em;
+  margin: 10px auto;
+  width: 70%;
+}
+
+.speaker-description {
+  font-size: 20px;
+  line-height: 1.4em;
+  margin: 10px auto;
+  width: 70%;
+}
+
+.introduction {
+  background: url('../images/kouyou1.jpg');
+  opacity: 0.5px;
+}
+.profile {
+  display:block;
+  margin:0 auto; }
+
+.profile img {
+  float:left; }
+
+.profile ul {
+  float:left;
+  text-align:left;
+  margin-top:50px;
+  color:#fff;
+  font-size:24px;
+  line-height:2em; }
+
+.entry {
+  background-image: url('../images/photo_02.jpg');
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;}
+
+
+/* line 81, /Users/yoichi_dan/.ghq/github.com/kamiyamarb/user-pages/source/stylesheets/all.css.scss */
 .btn-outline {
-  color: #563d7c;
+  font-size:32px;
+  font-weight:bold;
+  color: #7c0303;
   background-color: transparent;
-  border-color: #563d7c;
-}
+  border:10px solid #7c0303;
+  border-radius:10px;
+  padding:20px 30px;}
 
+/* line 87, /Users/yoichi_dan/.ghq/github.com/kamiyamarb/user-pages/source/stylesheets/all.css.scss */
 .btn-outline:hover, .btn-outline:focus, .btn-outline:active {
   color: #fff;
-  background-color: #563d7c;
-  border-color: #563d7c;
-}
+  background-color: #7c0303;
+  border-color: #7c0303; }
+
+.c_red {
+  color:#7c0303; }
+
+.bg_red {
+  background-color:#7c0303; }
+
+.c_yellow {
+  color:#99962e; }
+
+.bg_yellow {
+  background-color:#99962e; }
+
+.c_navy {
+  color:#093d59; }
+
+.bg_navy {
+  background-color:#093d59; }
+
+.c_blue {
+  color:#2099d9; }
+
+.bg_blue {
+  background-color:#2099d9; }
