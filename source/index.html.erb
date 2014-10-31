@@ -31,7 +31,7 @@ title: Kamiyama.rb #1
 <div class='contents'>
   <p class='title bg_red'>Session #1</p>
   <h3>XP祭り 2014 の再演<br/>「人生で大事なことはXP白本の参考文献に教わった<br/> 〜本と本の間の見えない糸を辿り、XPをより深く知る〜」</h3>
-  <h4>スピーカー：懸田 剛さん (<%= link_to '@kkd', 'https://twitter.com/kkd' %>)</h4>
+  <h4>スピーカー：懸田 剛さん (<%= link_to '@kkd', 'https://twitter.com/kkd', target: '_blank' %>)</h4>
 
   <div class='profile bg_red' style='height: 470px; width: 900px;' >
     <%= image_tag 'photo_kkd.jpg' %>
@@ -53,37 +53,65 @@ title: Kamiyama.rb #1
 <div class='contents'>
   <p class='title bg_yellow'>Session #2</p>
   <h3 class='c_yellow'>「プロジェクトで重要なことはだいたいSHIR○BAK○で学んだ(仮)」</h3>
-  <h4>スピーカー：鍛治舎 浩さん (<%= link_to 'kajisha', 'https://github.com/kajisha' %>)</h4>
+  <h4>スピーカー：鍛治舎 浩さん (<%= link_to 'kajisha', 'https://github.com/kajisha', target: '_blank' %>)</h4>
   <div class='profile bg_yellow' style='height: 470px; width: 850px;' >
     <%= image_tag 'https://avatars1.githubusercontent.com/u/1960696?v=2&s=470', style: 'height: 470px;'  %>
     <ul class='list-unstyled'>
       <li>永和システムマネジメント</li>
+      <li>今期見てるのは：</li>
+      <li><%= link_to 'SHIROBAKO', 'http://shirobako-anime.com/', target: '_blank' %></li>
+      <li><%= link_to 'グリザイアの果実', 'http://www.grisaia-anime.com/', target: '_blank' %></li>
+      <li><%= link_to '甘城ブリリアントパーク', 'http://www.tbs.co.jp/anime/amaburi/', target: '_blank' %></li>
+      <li><%= link_to 'Fate/stay night', 'http://www.fate-sn.com/', target: '_blank' %></li>
+      <li><%= link_to '天体のメソッド', 'http://sora-no-method.jp/', target: '_blank' %></li>
+      <li><%= link_to '俺、ツインテールになります。', 'http://www.tbs.co.jp/anime/ore_twi/', target: '_blank' %></li>
+      <li><%= link_to 'クロスアンジュ', 'http://crossange.com/', target: '_blank' %></li>
     </ul>
   </div>
+  <p class='speaker-description'>
+    「今日の〜仕事は○○かった〜」でおなじみ、永和の次元超越者 kajisha がアニメの街徳島にマチ★アソビから一ヶ月遅れての到着です。まさかとは思いますが、持ち時間で一話上映して終わりにならないように祈ります。
+  </p>
 </div>
 
 <div class='contents'>
   <p class='title bg_navy'>Session #2</p>
   <h3 class='c_navy'>Coming soon..</h3>
-  <h4>スピーカー：千葉 啓介さん (<%= link_to '@chibamem', 'https://twitter.com/chibamem' %>)</h4>
-  <div class='profile bg_navy' style='height: 470px; width: 950px;' >
+  <h4>スピーカー：千葉 啓介さん (<%= link_to '@chibamem', 'https://twitter.com/chibamem', target: '_blank' %>)</h4>
+  <div class='profile bg_navy' style='height: 470px; width: 980px;' >
     <%= image_tag 'chibamem.jpg', style: 'height: 470px;'  %>
-    <ul class='list-unstyled'>
+    <ul class='list-unstyled' style='width: 35%;'>
       <li>永和システムマネジメント</li>
+      <li>千葉県在住</li>
+      <li>
+        登山とスキーとカラオケを愛するプログラマ。
+      </li>
+      <li>JavaとRubyを行ったり来たりしてます。</li>
+      <li>
+        最近ベランダ菜園を始めました。
+      </li>
     </ul>
   </div>
+  <p class='speaker-description'>
+    永和のミスターグレイマン chibamem が念願の四国上陸です。 Rails の扱い方と伝統芸「グレイ」に関しての深い考察が聞けるものと期待しています。
+  </p>
 </div>
 
 <div class='contents'>
   <p class='title bg_blue'>Session #4</p>
   <h3 class='c_blue'>Coming soon..</h3>
-  <h4>スピーカー：田垣 亜季さん (<%= link_to '@akiinyo', 'https://twitter.com/akiinyo' %>)</h4>
-  <div class='profile bg_navy' style='height: 470px; width: 950px;' >
+  <h4>スピーカー：田垣 亜季さん (<%= link_to '@akiinyo', 'https://twitter.com/akiinyo', target: '_blank' %>)</h4>
+  <div class='profile bg_navy' style='height: 470px; width: 980px;' >
     <%= image_tag 'akiinyo.jpg', style: 'height: 470px;' %>
-    <ul class='list-unstyled'>
+    <ul class='list-unstyled' style='width: 35%;' >
       <li>永和システムマネジメント</li>
+      <li>ピアノ弾いたりRuby書いたり島に行ったりします。</li>
+      <li><%= link_to '田垣亜季オフィシャルブログ', 'http://akiinyo.tumblr.com/', target: '_blank' %></li>
+      <li><%= link_to 'プログラミング未経験なんて怖くない！リターンズ', 'https://speakerdeck.com/akiinyo/puroguraminguwei-jing-yan-nantebu-kunai-ritanzu', target: '_blank' %></li>
     </ul>
   </div>
+  <p class='speaker-description'>
+    永和が育てたレイルズクィーン akiinyo が個人的に大注目の神山にご降臨です。持ち時間 20 分でピアノを弾くのか Rails の話しをするのか注目が集まります。
+  </p>
 </div>
 
 <div class='contents'>
@@ -94,12 +122,12 @@ title: Kamiyama.rb #1
 
 <div class='contents'>
   <p class='title bg_yellow'>ライトニングトーク</p>
-  <h4>飛び込み歓迎！問い合わせは <%= link_to '@dany1468', 'https://twitter.com/dany1468' %> まで</h4>
+  <h4>飛び込み歓迎！問い合わせは <%= link_to '@dany1468', 'https://twitter.com/dany1468', target: '_blank' %> まで</h4>
 </div>
 
 <div class='contents entry'>
   <p class='title bg_navy'>参加申し込み</p>
   <p>
-    <%= link_to 'Doorkeeper 神山.rb 第一回', 'http://kamiyamarb.doorkeeper.jp/events/16452', class: 'btn btn-lg btn-outline', role: 'button' %>
+    <%= link_to 'Doorkeeper 神山.rb 第一回', 'http://kamiyamarb.doorkeeper.jp/events/16452', class: 'btn btn-lg btn-outline', role: 'button', target: '_blank' %>
   </p>
 </div>
